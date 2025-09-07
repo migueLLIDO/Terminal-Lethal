@@ -1,0 +1,65 @@
+body {
+  background-color: black;
+  color: #00ff66;
+  font-family: "Courier New", monospace;
+  font-size: 18px;
+  margin: 0;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.terminal {
+  width: 90%;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid #00ff66;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 15px #00ff66;
+  min-height: 200px;
+}
+
+.line {
+  margin: 5px 0;
+}
+
+.cursor {
+  display: inline-block;
+  width: 10px;
+  height: 20px;
+  background-color: #00ff66;
+  margin-left: 5px;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.vaultboy {
+  position: absolute;
+  width: 80px;
+  opacity: 0.8;
+}
+
+.vaultboy {
+  position: absolute;
+  opacity: 0.9;
+}
+
+/* Primeiro Vault Boy (canto superior esquerdo) */
+.vaultboy.top-left {
+  top: 10px;
+  left: 10px;
+  width: 180px;   /* aumentado de 80px para 180px */
+}
+
+/* Segundo Vault Boy (canto inferior direito) */
+.vaultboy.bottom-right {
+  bottom: 10px;
+  right: 10px;
+  width: 320px;   /* bem maior que o de cima */
+}
+
